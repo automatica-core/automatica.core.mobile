@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "675704819815",
+    "firebase_url": "https://automatica-core.firebaseio.com",
+    "project_id": "automatica-core",
+    "storage_bucket": "automatica-core.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675704819815:android:af810c177057b5db",
+        "android_client_info": {
+          "package_name": "at.automatica.core.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675704819815-al4nr1od6n0hfdj5io4a76iha0t9384l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtvrHUqX6RUUbcREwhrVVAcsN77TJzu6o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\home.jpg" />
+    <None Remove="Assets\home.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\home.jpg" />
+    <EmbeddedResource Include="Assets\home.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="1.7.0" />
+    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="1.7.0" />
+    <PackageReference Include="Microsoft.AppCenter.Push" Version="1.7.0" />
+    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Automatica.Core.Mobile.ViewModel\Automatica.Core.Mobile.ViewModel.csproj" />
+    <ProjectReference Include="..\..\Automatica.Core.Mobile.View\Automatica.Core.Mobile.View.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Pages\LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Pages\LoginPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+</Project>

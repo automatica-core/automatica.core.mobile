@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Automatica.Core.Model.Standard" Version="0.5.0.206" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Automatica.Core.Mobile.View\Automatica.Core.Mobile.View.csproj" />
+  </ItemGroup>
+
+</Project>

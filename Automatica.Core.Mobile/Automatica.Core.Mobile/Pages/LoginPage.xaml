@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Automatica.Core.Mobile"
+             xmlns:extensions="clr-namespace:Automatica.Core.Mobile.Extensions;assembly=Automatica.Core.Mobile"
+             x:Class="Automatica.Core.Mobile.Pages.LoginPage" Title="Automatica.Core Login">
+
+    <FlexLayout Direction="Column"  Margin="10,0,10,0">
+        <Image x:Name="Logo" Source="home.png" Aspect="AspectFit" HorizontalOptions="CenterAndExpand"  VerticalOptions="End"></Image>
+
+
+        <Label Text="Server address"></Label>
+        <Entry Text="{Binding IpAddress, Mode=TwoWay}" HorizontalOptions="Fill"  VerticalOptions="StartAndExpand"></Entry>
+
+        <Label Text="Username"></Label>
+        <Entry Text="{Binding Username, Mode=TwoWay}" HorizontalOptions="Fill"  VerticalOptions="StartAndExpand"></Entry>
+
+
+        <Label Text="Password"></Label>
+        <Entry IsPassword="true"  HorizontalOptions="Fill"  Text="{Binding Password, Mode=TwoWay}" VerticalOptions="StartAndExpand"></Entry>
+    </FlexLayout>
+
+</ContentPage>
